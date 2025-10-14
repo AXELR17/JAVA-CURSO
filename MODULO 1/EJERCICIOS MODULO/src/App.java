@@ -8,12 +8,14 @@ public class App {
 
 
         do {System.out.println("""
+            
                 .: Ejercicios del modulo 1:.
                 =======================
                 1. Verificar numero negativo
 
                 0. Salir
-                """); 
+                
+                Elija una opción:"""); 
             var opcion = input.nextInt();
             input.nextLine();
             switch (opcion) {
