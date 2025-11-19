@@ -4,6 +4,18 @@ public class Copia {
     private Integer identificador;
     private Libro libro;
     private EstadoCopia estado;
+    
+
+    public Copia(Libro libro) {
+        this(1, libro,EstadoCopia.BIBLIOTECA);
+    }
+    
+    public Copia(Integer identificador, Libro libro, EstadoCopia estado) {
+        this.identificador = 1;
+        this.libro = libro;
+        this.estado = estado;
+    }
+
     public Integer getIdentificador() {
         return identificador;
     }
@@ -12,9 +24,6 @@ public class Copia {
     }
     public Libro getLibro() {
         return libro;
-    }
-    public void setLibro(Libro libro) {
-        this.libro = libro;
     }
     public EstadoCopia getEstado() {
         return estado;
